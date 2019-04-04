@@ -201,7 +201,6 @@ main.login-container {/*mod*/
 	margin-top: 82px;
 	min-height: calc(100% - 157px);	
 	background-color: #f5f5f5;
-	background-image: url(../images/foto_login.jpg);
 	background-size: cover;
 	background-position-x: center;
 	text-align: center;
@@ -607,9 +606,7 @@ p.password-sent i {
 	padding-top: 10px;
 }
 
-.min-height-additional{
-	min-height: 304px;
-}
+
 
 button.button.login-access {
 	float: left;
@@ -1153,7 +1150,6 @@ article.servidor-caido {
 	}
 	nav {
 		width: 318px;
-		min-height: 46px;
 	}
 	
 	.lopd-text {
@@ -1363,7 +1359,6 @@ a.level2.isprogram {
 }
 
 .ui-panel .ui-panel-titlebar {
-    margin-bottom: 20px;
     float: left;
     width: 100%;
     padding: 0;
@@ -1403,11 +1398,6 @@ a.level2.isprogram {
 .preselection-container h2.preselection-subtitle{
 	display: none;
 }
-
-article.preselection-program{
-	min-height: 197px;
-}
-
 article.preselection-program, .preselection-application, .leyend, .evaluation-step, article.preselectionreport-program {
     background-color: #ffffff;
     padding: 20px;
@@ -1511,7 +1501,7 @@ h3.reporterscom-applicationnumber {
 }
 
 article.preselection-program h3, article.application-program h3, .preselection-application h3, article.preselectionreport-program h3  {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 
@@ -1580,13 +1570,13 @@ span.preselection-list-header, span.preselectionreport-list-header {
 	padding-top: 14px;
     float: left;
 	margin-right: 20px;
-	margin-left: 20px;
+	margin-left: 60px;
 	color: #ffffff;
 	font-size: 1.17em!important;
     /* padding: 15px; */
 	border-radius: 50%;
-	width: 49px;
-	height: 49px;
+	width: 59px;
+	height: 59px;
 	text-align: center;
 }
 .preselection-application-texts {
@@ -1717,48 +1707,10 @@ button.button-seeall {
 	box-shadow: none;
 }
 
-/* .ui-state-active span.ui-button-text.ui-unselectable-text:after {
-	content: "\f00d";
-	font-family: Font Awesome\ 5 Free;
-	font-weight: 900;	
-	padding-left: 6px;
-} */
-
-.ui-togglebutton.ui-button.ui-state-default span:before {
-    content: "";
-    margin: -2px 6px 0 0;
-    box-sizing: border-box;
-    width: 17px;
-    height: 16px;
-    vertical-align: middle;
-    display: inline-block;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(../images/folder-close-g.png);
-    font-weight: 900;
-    padding-left: 6px;
-}
-
-.ui-state-active.ui-togglebutton.ui-button.ui-state-default span:before {
-	background-image: url(../images/folder-close-w.png);
-}
-
-.partiallyevaluated .ui-togglebutton.ui-button.ui-state-default span:before {
-    
-    background-image: url(../images/folder-partially-g.png);
-    
-}
-.partiallyevaluated .ui-state-active.ui-togglebutton.ui-button.ui-state-default span:before {
-    
-    background-image: url(../images/folder-partially-w.png);
-    
-}
 
 .evaluated .ui-togglebutton.ui-button.ui-state-default span:before {
     
 	height: 18px;
-    background-image: url(../images/folder-ok-g.png);
     
 }
 
@@ -1790,14 +1742,6 @@ span.pointer {
 	
 }
 
-
-.evaluated .ui-state-active.ui-togglebutton.ui-button.ui-state-default span:before {
-    
-	height: 18px;
-    background-image: url(../images/folder-ok-w.png);
-    
-}
-
 .box-notpreselected .application-status i {
     font-size: 23px;
     color: #e85425;
@@ -1808,6 +1752,7 @@ span.pointer {
     color: #0c7ebe;
 }
 
+/* colores de estados*/
 article.preselection-application:after {
     content: "";
     position: absolute;
@@ -1817,19 +1762,22 @@ article.preselection-application:after {
     left: 0;
     height: 100%;
 }
+article.successful:after {
+    background: #2eda1e;    
+}
+article.failed:after {
+    background: #e85425;    
+}
 
 article.box-partiallyevaluated:after {
     background: #FDB928;    
 }
-article.box-evaluated:after {
-    background: #2eda1e;    
-}
+
+
 article.box-preselected:after {
     background: #0c7ebe;    
 }
-article.box-notpreselected:after {
-    background: #e85425;    
-}
+
 
 article.box-discrepancies:after{
 	background: #e85425; 
@@ -1885,7 +1833,7 @@ ul.ui-tabview-nav:before{
 	text-align: right;
 	padding-bottom: 5px;
      padding-right: 7px; 
-	width: 112px;
+	width: 110px;
 	display: inline-block;
 	vertical-align: bottom;
 }
@@ -1994,7 +1942,6 @@ ul.ui-tabview-nav:before{
 		font-size: 25px;
 		color:#666666;
 	}
-
 
 	.ui-menu .ui-menuitem > .ui-menuitem-link:hover{
 		background:#ffffff!important;
@@ -2114,7 +2061,6 @@ a.ui-toast-close-icon.pi.pi-times.ng-tns-c8-8
  font-size: 15px;
  font-weight: bold;
  color:#666666;
- cursor:default;
 
 }
 article.evaluation-step{
@@ -2253,10 +2199,6 @@ button.next[disabled], button.prev[disabled]{
 	color: #666666;
 }
 
-.marginBootom-link{
-	margin-bottom: 10px;
-}
-
 .marginCandidate ul{
 	margin-left: 5px;
 }
@@ -2268,6 +2210,7 @@ button.next[disabled], button.prev[disabled]{
 	vertical-align: middle;
 	width: 60px;
 	height: 34px;
+	float: right;
   }
 
   .switch-container .label {
@@ -2864,6 +2807,11 @@ div#justification, div#priorassesment {
 		padding: 0 20px;
 }
 
+.server-view{
+    width: 100% !important;
+
+}
+
 /*Commitees evaluation*/
 .comitees .evaluation-card-left {
     width: 100%;
@@ -2945,7 +2893,7 @@ div#justification, div#priorassesment {
 @media only screen and  (max-width: 500px){
 	
     .evaluation-card .evaluation-card-left{
-		/* margin-top: 80px; */
+		margin-top: 80px;
 		width: 100%;
 	}
 
@@ -3077,7 +3025,7 @@ div#justification, div#priorassesment {
 	}
 
 	.preselection-container, .evaluation-container, .information-expert-container {
-		width: calc(100% - 378px);
+		width: calc(100% - 20px);
 		margin: 0 20px 0 10px;
 	}
 
@@ -3136,8 +3084,6 @@ div#justification, div#priorassesment {
 		width: calc(50% - 5px);
 		white-space: unset;
 	}
-
-
 	
 	article.preselectionreport-program:nth-child(even) {
 		margin-left: 5px;
@@ -3235,7 +3181,7 @@ div#justification, div#priorassesment {
 	/*preselection cards*/
 
 	.preselection-application {
-		width: calc(100% - 5px);
+		width: calc(100%);
 		position: relative;
 	}
 
@@ -3250,11 +3196,11 @@ div#justification, div#priorassesment {
 
 	
 	.preselectionapplication-identification {
-		width: 118px;
+		width: 240px;
 		
 	}
 	.preselection-application-texts {
-		width: calc(100% - 189px);
+		width: calc(100% - 270px);
 		
 	}
 
@@ -3295,11 +3241,6 @@ div#justification, div#priorassesment {
 
 @media only screen and (min-width:1224px) {
 
-
-/*Preselection reports*/	
-.reports-container {
-    max-width: 1200px;
-}
 .preselectionreport-list {
 	position: relative;
 	float: left;
@@ -3349,7 +3290,7 @@ span.preselectionreport-list-header {
 
 .application-academictrainning{
 	/* width: 400px; */
-	width: 42%;
+	width: 30%;
 }
 .application-justification {
 	/* width: calc(100% - 400px); */
@@ -3766,13 +3707,8 @@ ul.onboarding li{
 }
 
 
-.BackgroundEvaluated{
-	background: #2eda1e!important;
-}
 
-.BackgroundNotEvaluated{
-	background: #cacaca!important;
-}
+
 
 .BackgroundPartial{
 	background: #fdb928!important;
@@ -3782,7 +3718,16 @@ ul.onboarding li{
 	background: #0c7ebe!important;
 }
 
-.BackgroundNotPreselected{
+/* color de estados */
+.BackgroundNotEvaluated{
+	background: #cacaca!important;
+}
+
+.successful{
+	background: #2eda1e!important;
+}
+
+.failed{
 	background: #e85425!important;
 }
 
@@ -3917,7 +3862,7 @@ span.ui-slider-handle.ui-state-default.ui-corner-all.ui-clickable{
 	}
 
 	.application-academictrainning {
-		width: 35%;
+		width: 30%;
 	}
 }
 
@@ -4017,8 +3962,4 @@ span.ui-menuitem-text.click-arrow{
 	margin-top:18px;
 	color: #666666;
     margin-bottom: 5px;
-}
-
-.mobReportButton{
-	margin-top:59px;
 }
